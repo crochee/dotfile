@@ -9,7 +9,7 @@ fi
 
 for FILE in $STAGED_GO_FILES
 do
-  goimports-reviser -file-path $FILE -rm-unused
+  goimports-reviser -file-path $FILE -rm-unused -project-name=$name
 done
 
 PASS=true
